@@ -21,7 +21,7 @@ const project = new AwsCdkConstructLibrary({
     dotNetNamespace: 'jakeitegsy.examples',
     packageId: 'ProjectName.Test'
   },
-  publishToPyPi: {
+  publishToPypi: {
     distName: 'ProjectName',
     module: 'ProjectName'
   },
