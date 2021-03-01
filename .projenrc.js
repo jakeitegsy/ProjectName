@@ -19,11 +19,11 @@ const project = new AwsCdkConstructLibrary({
   eslint: true,
   publishToNuget: {
     dotNetNamespace: 'jakeitegsy.examples',
-    packageId: 'ProjectName.Test'
+    packageId: 'ProjectName.Test',
   },
   publishToPypi: {
     distName: 'ProjectName',
-    module: 'ProjectName'
+    module: 'ProjectName',
   },
 
   /* NodePackageOptions */
@@ -45,4 +45,4 @@ const project = new AwsCdkConstructLibrary({
   projectType: ProjectType.LIB,
 });
 
-project.synth()
+project.synth();

@@ -9,4 +9,4 @@ test('Simple test', () => {
   new InlineLambdaConstruct(stack, 'SimpleInlineLambdaConstruct');
 
   expectCDK(stack).to(countResources('AWS::Lambda::Function', 1));
-})
+});
