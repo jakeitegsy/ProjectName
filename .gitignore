@@ -8,7 +8,6 @@
 *.tsbuildinfo
 .cache
 .eslintcache
-.idea
 .jsii
 .nyc_output
 .yarn-integrity

@@ -2,7 +2,7 @@
   "name": "ProjectName",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakeitegsy/ProjectName.git"
+    "url": "git@github.com:jakeitegsy/ProjectName.git"
   },
   "scripts": {
     "projen": "npx projen",
@@ -20,8 +20,8 @@
     "watch": "npx projen watch",
     "package": "npx projen package",
     "eslint": "npx projen eslint",
-    "docgen": "npx projen docgen",
-    "compat": "npx projen compat"
+    "compat": "npx projen compat",
+    "docgen": "npx projen docgen"
   },
   "author": {
     "name": "jakeitegsy",
@@ -48,17 +48,10 @@
     "projen": "^0.16.19",
     "standard-version": "^9",
     "ts-jest": "^26.5.2",
-    "typedoc": "^0.20.28",
     "typescript": "^4.2.2"
   },
   "peerDependencies": {
-    "@aws-cdk/aws-lambda": "^1.73.0",
-    "@aws-cdk/core": "^1.73.0",
     "constructs": "^3.2.27"
-  },
-  "dependencies": {
-    "@aws-cdk/aws-lambda": "^1.73.0",
-    "@aws-cdk/core": "^1.73.0"
   },
   "bundledDependencies": [],
   "keywords": [
@@ -110,16 +103,7 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {
-      "python": {
-        "distName": "ProjectName",
-        "module": "ProjectName"
-      },
-      "dotnet": {
-        "namespace": "jakeitegsy.examples",
-        "packageId": "ProjectName.Test"
-      }
-    },
+    "targets": {},
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"
